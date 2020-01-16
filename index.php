@@ -14,45 +14,184 @@
 <body>
 	
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top fixed-top ">
-	  <div class="container">
-	    <a class="navbar-brand" href="#">
-	          <img src="assets/shared/img/logo.png" alt="logo cherry">
-	        </a>
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-	          <span class="navbar-toggler-icon"></span>
-	        </button>
-	    <div class="collapse navbar-collapse" id="navbarResponsive">
-	      <ul class="navbar-nav ml-auto">
-	        <li class="nav-item active">
-	          <a class="nav-link" href="#">Home
-	                <span class="sr-only">(current)</span>
-	              </a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">About</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Services</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Contact</a>
-	        </li>
-	        <li class="nav-item">
-	        	<!-- Search form -->
-				<div class="input-group md-form form-sm form-2 pl-0">
-					<input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
-					<div class="input-group-append">
-					    <span class="input-group-text amber lighten-3" id="basic-text1">
-					    	<a href="#"><i class="fa fa-search text-grey"
-					        aria-hidden="true"></i></a></span>
+	<div class="container-fluid px-0">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top fixed-top p-0"> 
+			<a class="navbar-brand mr-4" href="#">
+				
+				<img src="assets/shared/img/logo.png" alt="logo cherry">
+			</a>
+			<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+				<span class="navbar-toggler-icon"></span> 
+			</button>
+		
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav ml-auto">
+		        <li class="nav-item active">
+		          <a class="nav-link text-uppercase" href="#">Trang Chủ
+		                <span class="sr-only">(current)</span>
+		              </a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-uppercase" href="#">Giới Thiệu</a>
+		        </li>		        
+		        <li class="nav-item"> 
+		        	<a class="nav-link text-uppercase" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dịch Vụ
+		        		<span class="fa fa-angle-down"></span>
+		        	</a>
+                    <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                        <div class="fa-icon text-center"> 
+                                        	<span class="fa fa-folder"></span> 
+                                        </div>
+                                        <div class="d-flex flex-column"> 
+                                        	<a class="dropdown-item" href="#">
+                                                <h6 class="mb-0 text-uppercase">In áo đẹp</h6> 
+                                                <small class="text-muted">Chuyên in các loại áo thun</small>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                        <div class="fa-icon text-center"> 
+                                        	<span class="fa fa-question"></span> 
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        	<a class="dropdown-item" href="#">
+                                                <h6 class="mb-0 text-uppercase">Giải pháp IT</h6> 
+                                                <small class="text-muted">Tiện ích tối ưu</small>
+                                            </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                        <div class="fa-icon text-center"> 
+                                        	<span class="fa fa-calculator"></span> 
+                                        </div>
+                                        <div class="d-flex flex-column"> 
+                                        	<a class="dropdown-item" href="#">
+                                                <h6 class="mb-0 text-uppercase">Thiết kế Web</h6> 
+                                                <small class="text-muted">Chuẩn công nghệ mới</small>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                        <div class="fa-icon text-center"> 
+                                        	<span class="fa fa-paper-plane"></span> 
+                                        </div>
+                                        <div class="d-flex flex-column"> 
+                                        	<a class="dropdown-item" href="#">
+                                                <h6 class="mb-0 text-uppercase">Camera An ninh</h6>
+                                                <small class="text-muted">An toàn cho mọi nhà</small>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+		        <li class="nav-item"> 
+		        	<a class="nav-link text-uppercase" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm<span class="fa fa-angle-down"></span></a>
+	                <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">
+	                    <div class="container-fluid">
+	                        <div class="row">
+	                            <div class="col-md-6">
+	                                <div class="row d-flex tab">
+	                                    <div class="fa-icon text-center"> 
+	                                    	<span class="fa fa-shopping-cart"></span> 
+	                                    </div>
+	                                    <div class="d-flex flex-column">
+	                                    	<a class="dropdown-item" href="#">
+	                                            <h6 class="mb-0 text-uppercase">May áo thun</h6> 
+	                                            <small class="text-muted">Thiết kế theo yêu cầu</small>
+	                                        </a> 
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="row d-flex tab">
+	                                    <div class="fa-icon text-center">
+	                                    	<span class="fa fa-gamepad"></span> 
+	                                    </div>
+	                                    <div class="d-flex flex-column">
+	                                    	<a class="dropdown-item" href="#">
+	                                            <h6 class="mb-0 text-uppercase">Thiết kế Web</h6> 
+	                                            <small class="text-muted">Theo chuẩn công nghệ 4.0</small>
+	                                        </a> 
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="row">
+	                            <div class="col-md-6">
+	                                <div class="row d-flex tab">
+	                                    <div class="fa-icon text-center"> <span class="fa fa-video-camera"></span> </div>
+	                                    <div class="d-flex flex-column"> <a class="dropdown-item" href="#">
+	                                            <h6 class="mb-0 text-uppercase">Giải pháp IT</h6> <small class="text-muted">Giúp kinh doanh tốt</small>
+	                                        </a> </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="row d-flex tab">
+	                                    <div class="fa-icon text-center"> <span class="fa fa-comment"></span> </div>
+	                                    <div class="d-flex flex-column"> <a class="dropdown-item" href="#">
+	                                            <h6 class="mb-0 text-uppercase">Công nghệ in</h6> <small class="text-muted">Chất lượng hàng đầu</small>
+	                                        </a> </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="row">
+	                            <div class="col-md-6">
+	                                <div class="row d-flex tab">
+	                                    <div class="fa-icon text-center"> <span class="fa fa-briefcase"></span> </div>
+	                                    <div class="d-flex flex-column"> <a class="dropdown-item" href="#">
+	                                            <h6 class="mb-0 text-uppercase">Áo đồng phục </h6> <small class="text-muted">Tính chuyên nghiệp hơn</small>
+	                                        </a> </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="row d-flex tab">
+	                                    <div class="fa-icon text-center"> <span class="fa fa-bolt"></span> </div>
+	                                    <div class="d-flex flex-column"> <a class="dropdown-item" href="#">
+	                                            <h6 class="mb-0 text-uppercase">Áo lớp - nhóm</h6> <small class="text-muted">Tình bạn sẽ nhớ mãi</small>
+	                                        </a> </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </li>
+		        
+		        <li class="nav-item">
+		          <a class="nav-link text-uppercase" href="#">Đối Tác</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-uppercase" href="#">Liên Hệ</a>
+		        </li>
+		        <li class="nav-item">
+		        	<!-- Search form -->
+					<div class="input-group md-form form-sm form-2 pl-0">
+						<input class="form-control my-0 py-1 amber-border" type="text" placeholder="Tìm kiếm" aria-label="Search">
+						<div class="input-group-append">
+						    <span class="input-group-text amber lighten-3" id="basic-text1">
+						    	<a href="#"><i class="fa fa-search text-grey"
+						        aria-hidden="true"></i></a></span>
+						</div>
 					</div>
-				</div>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav><!-- end Navigation menu -->
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav><!-- end Navigation menu -->
+	</div>
 	<!-- header -->
 	<header class="bao_head">
         <div class="container-fluid">
@@ -61,8 +200,12 @@
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="0"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="0"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="6"></li>
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
@@ -115,34 +258,43 @@
                 <div class="col-md-12">
                     <div class="row text-center">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h2 class="section_tren text-uppercase">Services</h2>
-                            <p class="section_duoi text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <h2 class="section_tren text-uppercase">Dịch vụ của chúng tôi</h2>
+                            <p class="section_duoi text-muted">Luôn mang đến bạn một dịch vụ chất lượng nhất.</p>
                         </div>
                         <div class="row">
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="ser_head">Camera An ninh</h4>
+                                <p class="text-muted">Giải pháp camera cho nhà ở, công ty, đường phố hiệu quả an toàn, mang giá trị thực tế cho mọi nhà.</p>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                 <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                                     <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                                 </span>
-                                <h4 class="ser_head">E-Commerce</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                <h4 class="ser_head">In áo thun đẹp</h4>
+                                <p class="text-muted">Quý khách hàng được thiết kế miễn phí và chất lượng luôn mang đến sự hài lòng của khách hàng.</p>
                             </div>
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                 <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                                     <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                                 </span>
                                 
-                                <h4 class="ser_head">E-Commerce</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                <h4 class="ser_head">Thiết kế Web</h4>
+                                <p class="text-muted">Chuẩn thiết kế chuyên nghiệp theo công nghệ và nền tảng mới nhất, đáp ứng nhu cầu của quý khách hàng.</p>
                             </div>
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                 <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                                     <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                                 </span>
-                                <h4 class="ser_head">Web Security</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                <h4 class="ser_head">Giải pháp IT</h4>
+                                <p class="text-muted">Là một đại lý của Mobifone cung cấp các giải pháp tối ưu giúp doanh nghiệp phát triển hơn.</p>
 
                             </div>
 
@@ -156,8 +308,8 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h2 class="section_tren text-uppercase">Contact Us</h2>
-                    <p class="section_duoi text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2 class="section_tren text-uppercase">Liên hệ chúng tôi</h2>
+                    <p class="section_duoi text-muted">Vui lòng điền đầy đủ thông tin, chúng tôi cố gắng phản hồi và liên lạc với khách hàng một cách sớm nhất.</p>
                 </div>
             </div> <!-- end row 1 -->
             <div class="row">
@@ -191,7 +343,7 @@
                         <div class="clearfix"></div>
                         <div class="col-md-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-primary btn-xl text-uppercase" id="nutguiEmail">Send Message</button>
+                            <button type="submit" class="btn btn-primary btn-xl text-uppercase" id="nutguiEmail">Gởi thông tin</button>
                         </div> <!-- end col 12 trong row 12 cot cua form -->
                     </form><!--  end form -->
                 </div> <!-- end col12 cua row2 -->
@@ -203,10 +355,10 @@
 	<footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="copyright">Copyright &copy; Mr. Nghi 2020</span>
                 </div> <!-- end col 4 1 -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <ul class="list-inline social_bao">
                         <li class="list-inline-item">
                             <a href="#">
@@ -225,13 +377,18 @@
                         </li>
                     </ul>
                 </div> <!-- end col 4 2 -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <ul class="list-inline quicklinks">
                         <li class="list-inline-item">
-                            <a href="#">Privacy Policy</a>
+                            <a href="#">Quy trình bán hàng</a>
                         </li>
+                        
+                    </ul>
+                </div> <!-- end col 4 3 -->
+                <div class="col-md-3">
+                    <ul class="list-inline quicklinks">                       
                         <li class="list-inline-item">
-                            <a href="#">Terms of Use</a>
+                            <a href="#">Quy định của công ty</a>
                         </li>
                     </ul>
                 </div> <!-- end col 4 3 -->
@@ -247,5 +404,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
