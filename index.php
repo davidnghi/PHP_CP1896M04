@@ -52,7 +52,8 @@
 	      </ul>
 	    </div>
 	  </div>
-	</nav><!-- end nav menu -->
+	</nav><!-- end Navigation menu -->
+	<!-- header -->
 	<header class="bao_head">
         <div class="container-fluid">
 			<div class="row">
